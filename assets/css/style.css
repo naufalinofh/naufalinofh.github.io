@@ -278,9 +278,10 @@ a:hover{
 /* ========== HACKATHON ========== */
 
 #hackathon,
-#registration {
-    background-color: #782139;
-    color: white;
+#registration,
+#news {
+    background-color: var(--red-primary);
+    color: var(--content-color-contrast);
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
@@ -430,7 +431,7 @@ a:hover{
 .timeline .event:after {
     position: absolute;
     display: block;
-    top: 0;
+    top: 7px;
     margin-bottom: 0px;
     margin-top: 0px;
     padding-bottom: 0px;
@@ -511,8 +512,8 @@ a:hover{
     /* "play" icon */
     margin-right: 1.5rem;
     float: right;
-    color: #782139;
-    font-size: 12px;
+    color: var(--content-color-contrast);
+    font-size: 1.5rem;
     line-height: 22px;
     /* rotate "play" icon from > (right arrow) to down arrow */
     -webkit-transform: rotate(-90deg);
@@ -523,19 +524,19 @@ a:hover{
 }
 
 .accordion-toggle:hover {
-    color: #454444;
+    color: var(--content-color-contrast);
     text-decoration: none;
     opacity: 0.9;
 }
 
 .accordion-toggle {
-    color: #454444;
-    font-size: 1rem;
+    color: var(--content-color-contrast);
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
 .panel-default {
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
 }
 
 .panel-body {
@@ -549,7 +550,7 @@ a:hover{
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
-    color: #454444;
+    color: var(--content-color-contrast);
 }
 
 
