@@ -7,6 +7,8 @@
     --body-color: #495057;
     --red-primary: #782139;
     --content-color :#000;
+    --bg-color :#fff;
+    --bg-color-secondary :#495057;
     --content-color-contrast : #fff;
 }
 
@@ -95,7 +97,7 @@ a:hover{
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--red-primary);
+    color: var(--content-color);
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1rem;
@@ -106,8 +108,8 @@ a:hover{
 }
 
 .navbar-light .navbar-nav a.nav-link.active {
-    background-color: var(--red-primary);
-    color: #fff;
+    background-color: var(--bg-color-secondary);
+    color: var(--content-color-contrast);
     border-radius: .25rem;
 }
 
@@ -125,7 +127,7 @@ a:hover{
 
 /* ========== HERO ========== */
 
-#home {
+#home,#projects {
     /* background-image: url('../img/background1.png'); */
     /**background-color: #fff;
     background-size: cover;
@@ -247,43 +249,18 @@ a:hover{
     background-color: var(--red-primary);
 }
 
-
-/*Mailchimp form*/
-
-#mc_embed_signup .mc-field-group input {
-    display: block;
-    width: 50%;
-    padding: 8px 0;
-    text-indent: 2%;
-}
-
-#mc_embed_signup .mc-field-group .input-group input {
-    margin-right: 2rem;
-}
-
-.mc-field-group label {
-    font-weight: bold;
-}
-
-.input-group li label {
-    font-weight: normal;
-    margin-left: 1rem;
-}
-
-#mc-embedded-subscribe {
-    margin-left: 0;
-}
-
-
 /* ========== HACKATHON ========== */
 
 #hackathon,
 #registration,
 #news {
-    background-color: var(--red-primary);
+    background-color: var(--bg-color-secondary);
     color: var(--content-color-contrast);
     padding-top: 4rem;
     padding-bottom: 4rem;
+}
+.color-secondary{
+    color: var(--content-color-contrast);
 }
 
 .countdown {
@@ -344,6 +321,43 @@ a:hover{
 }
 
 
+
+/*PROJECT*/
+.project{
+    padding : 2rem 0;
+    position: relative;
+    list-style: none;
+}
+.project-detail img{
+    position: inherit;
+    max-width: 50%;
+    height: auto;
+    padding : 0.5rem 0.2rem;
+}
+
+.project::after{
+    content: "";
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0;
+    right: 0;
+    height: 0.5em;
+    border-top: 1px solid black;
+    z-index: -1;
+}
+.see-more{
+
+}
+.see-more:hover {
+    color: var(--content-color);
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.see-more {
+    color: var(--content-color);
+    font-size: 1rem;
+}
 /* #content {} */
 
 .timeline {
@@ -506,23 +520,6 @@ a:hover{
     font-weight: bold;
 }
 
-.panel-heading [data-toggle="collapse"]:after {
-    font-family: 'fontawesome';
-    content: "\f054";
-    /* "play" icon */
-    margin-right: 1.5rem;
-    float: right;
-    color: var(--content-color-contrast);
-    font-size: 1.5rem;
-    line-height: 22px;
-    /* rotate "play" icon from > (right arrow) to down arrow */
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-}
-
 .accordion-toggle:hover {
     color: var(--content-color-contrast);
     text-decoration: none;
@@ -604,7 +601,7 @@ a:hover{
 /* ==========FOOTER============ */
 
 footer {
-    background-color: #782139;
+    background-color: var(--bg-color-secondary);
     background-size: auto;
     background-repeat: no-repeat;
     position: relative;
