@@ -345,9 +345,7 @@ a:hover{
     border-top: 1px solid black;
     z-index: -1;
 }
-.see-more{
 
-}
 .see-more:hover {
     color: var(--content-color);
     text-decoration: none;
