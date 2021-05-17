@@ -2,6 +2,8 @@ var yourDateToGo = new Date("2021-01-20T23:59:59+07:00").getTime(); //here you'r
 // yourDateToGo.setDate(yourDateToGo.getDate() + 7); //your're setting date in this object 1 day more from now
 //you can change number of days to go by putting any number in place of 1
 
+
+/**
 var timing = setInterval( // you're making an interval - a thing, that is updating content after number of miliseconds, that you're writing after comma as second parameter
     function () {
 
@@ -28,3 +30,16 @@ var timing = setInterval( // you're making an interval - a thing, that is updati
     }
     //which id is countdown
     }, 1000);
+    **/
+
+$(document).ready(function() {
+    $(".see-more").click(function() {
+        if ($(this).attr('aria-expanded') === "true") {
+            console.log("aria expanded true");
+            $(this).html("See more ...");
+        }
+        if ($(this).attr('aria-expanded') === "false") {
+            $(this).html("See less");
+        }
+    })
+})

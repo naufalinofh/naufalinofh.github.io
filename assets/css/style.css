@@ -345,17 +345,17 @@ a:hover{
     border-top: 1px solid black;
     z-index: -1;
 }
-
+.see-more {
+    font-weight: bolder;
+}
 .see-more:hover {
     color: var(--content-color);
     text-decoration: none;
     opacity: 0.9;
 }
 
-.see-more {
-    color: var(--content-color);
-    font-size: 1rem;
-}
+
+
 /* #content {} */
 
 .timeline {
