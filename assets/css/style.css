@@ -328,9 +328,18 @@ a:hover{
     position: relative;
     list-style: none;
 }
+
+.project-img img{
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin : auto;
+    padding : 0.5rem 0.2rem;
+}
+
 .project-detail img{
     position: inherit;
-    max-width: 50%;
+    max-width: 45%;
     height: auto;
     padding : 0.5rem 0.2rem;
 }
