@@ -339,7 +339,7 @@ a:hover{
 
 .project-detail img{
     position: inherit;
-    max-width: 45%;
+    max-width: 32%;
     height: auto;
     padding : 0.5rem 0.2rem;
 }
