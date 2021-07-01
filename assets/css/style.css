@@ -54,7 +54,7 @@ a:hover{
 .section-title-heading {
     font-family: 'Open Sans', sans-serif;
     color: var(--section-title-color-dark);
-    padding-top: 2rem;
+    padding-top: 1rem;
     text-transform: capitalize;
     font-weight: bolder;
     font-size: 2rem;
@@ -134,7 +134,7 @@ a:hover{
     background-repeat: no-repeat;
     **/
     margin-top: 1rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-bottom: 5rem;
     position: relative;
     color: var(--content-color);
