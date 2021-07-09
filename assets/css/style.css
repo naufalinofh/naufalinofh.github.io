@@ -201,6 +201,12 @@ a:hover{
     opacity: 1;
 }
 
+.head-logo img{
+    width: 100px;
+    height: auto;
+    max-width: 50%;
+}
+
 .horizontal-line {
     margin : 1rem auto;
     width: 75%;
