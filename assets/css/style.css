@@ -2,14 +2,14 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 :root {
     --main-accent-color: #e66e06;
-    --section-title-color-dark: #585858;
-    --section-title-color-dark-2: #e66e06;
+    --section-title-color: #fff;
+    --section-title-color-2: #585858;
     --body-color: #495057;
     --red-primary: #782139;
-    --content-color :#000;
-    --bg-color :#fff;
-    --bg-color-secondary :#495057;
-    --content-color-contrast : #fff;
+    --content-color :#fff;
+    --bg-color :#495057;
+    --bg-color-secondary :#fff;
+    --content-color-contrast : #000;
 }
 
 html {
@@ -24,7 +24,8 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     position: relative;
-    color: var(--content-color);
+    color: var(--content-color-contrast);
+    background-color: var(--bg-color-secondary);
 }
 
 h1 {
@@ -53,7 +54,7 @@ a:hover{
 
 .section-title-heading {
     font-family: 'Open Sans', sans-serif;
-    color: var(--section-title-color-dark);
+    color: var(--section-title-color);
     padding-top: 1rem;
     text-transform: capitalize;
     font-weight: bolder;
@@ -92,8 +93,8 @@ a:hover{
 
 .navbar {
     padding-top: 0.5rem;
-    background-image: linear-gradient(to right, white, white);
-    /* background-color: #083355; */
+    background-color: var(--bg-color);
+    color: var(--content-color);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -104,6 +105,7 @@ a:hover{
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
+    color: var(--content-color);
     opacity: 0.95;
 }
 
@@ -113,23 +115,13 @@ a:hover{
     border-radius: .25rem;
 }
 
-.navbar-brand {
-    color: #782139;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 900;
-}
-
-.navbar-brand img {
-    color: #782139;
-    height: 40px;
-}
 
 
 /* ========== HERO ========== */
 
-#home,#projects {
+#projects {
     /* background-image: url('../img/background1.png'); */
-    /**background-color: #fff;
+    /**
     background-size: cover;
     background-repeat: no-repeat;
     **/
@@ -137,7 +129,29 @@ a:hover{
     padding-top: 2rem;
     padding-bottom: 5rem;
     position: relative;
+    color: var(--content-color-contrast);
+    background-color: var(--bg-color-secondary);
+}
+
+#news,#home{
+    background-color: var(--bg-color-secondary);
+    color: var(--content-color-contrast);
+}
+
+#about{
+    background-color: var(--bg-color);
     color: var(--content-color);
+    padding-top : 2rem;
+    padding-bottom : 2rem;
+}
+
+#news{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#home{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 .main-hero-content h1 {  
@@ -186,24 +200,21 @@ a:hover{
 .icon-logo:hover {
     opacity: 1;
 }
+
+.horizontal-line {
+    margin : 1rem auto;
+    width: 75%;
+    color: var(--section-title-color-2);
+    border-width: 2px;
+}
 /* ========== ABOUT ========== */
 
-
-/*#about {}*/
 
 .about-image img {
     margin-top: 10rem;
     /* margin: auto; */
     height: 100px;
 }
-
-.about-btn {
-    background-color: var(--red-primary);
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
 
 
 /* ========== WEBINAR ========== */
@@ -251,16 +262,8 @@ a:hover{
 
 /* ========== HACKATHON ========== */
 
-#hackathon,
-#registration,
-#news {
-    background-color: var(--bg-color-secondary);
-    color: var(--content-color-contrast);
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
 .color-secondary{
-    color: var(--content-color-contrast);
+    color: var(--section-title-color-2);
 }
 
 .countdown {
@@ -340,10 +343,14 @@ a:hover{
 .project-detail img{
     position: inherit;
     max-width: 32%;
+    max-height : 200px;
     height: auto;
     padding : 0.5rem 0.2rem;
 }
 
+.project-detail strong{
+    color: var(--section-title-color-2);
+}
 .project::after{
     content: "";
     position: absolute;
@@ -351,14 +358,14 @@ a:hover{
     left: 0;
     right: 0;
     height: 0.5em;
-    border-top: 1px solid black;
-    z-index: -1;
+    border-top: 1px solid var(--section-title-color-2);
+    z-index: 1;
 }
 .see-more {
     font-weight: bolder;
+    color: var(--section-title-color-2);
 }
 .see-more:hover {
-    color: var(--content-color);
     text-decoration: none;
     opacity: 0.9;
 }
@@ -411,8 +418,9 @@ a:hover{
         margin-left: 1.2rem;
         margin-right: 1.2rem;
     }
-    #mc_embed_signup .mc-field-group input {
-        width: 100%;
+    .project-detail img{
+        max-width: 90%;
+        margin : auto;
     }
 }
 
@@ -528,13 +536,12 @@ a:hover{
 }
 
 .accordion-toggle:hover {
-    color: var(--content-color-contrast);
     text-decoration: none;
     opacity: 0.9;
 }
 
 .accordion-toggle {
-    color: var(--content-color-contrast);
+    color: var(--section-title-color-2);
     font-size: 2.5rem;
     font-weight: bold;
 }
@@ -562,7 +569,7 @@ a:hover{
     /* "play" icon */
     margin-right: 1.5rem;
     float: right;
-    color: var(--content-color-contrast);
+    color: var(--section-title-color-2);
     font-size: 1.5rem;
     /* rotate "play" icon from > (right arrow) to down arrow */
     -webkit-transform: rotate(-90deg);
@@ -623,7 +630,8 @@ a:hover{
 /* ==========FOOTER============ */
 
 footer {
-    background-color: var(--bg-color-secondary);
+    background-color: var(--bg-color);
+    color: var(--content-color);
     background-size: auto;
     background-repeat: no-repeat;
     position: relative;

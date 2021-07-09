@@ -1,7 +1,7 @@
 // Cool loopy loop of adjectives I like :)
 $(document).ready(function() {
   
-    var items = ["Passionate Product Guy", "Engineer Turn Into Entrepreneur", "Tech Innovation Enthusiast", "Passionate Problem Solver"],
+    var items = ["Passionate Product Guy", "Engineer Turn Entrepreneur", "Tech Innovation Enthusiast", "Problem Solver"],
         $text = $( '#about-me span' ),
         delay = 2; //seconds
     
