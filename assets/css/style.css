@@ -188,12 +188,6 @@ a:hover{
     font-weight: bold;
 }
 
-.logo img{
-    width: 100px;
-    height: auto;
-    max-width: 50%;
-}
-
 .icon-logo {
     height: 24px;
     width: 24px;
@@ -205,6 +199,12 @@ a:hover{
 
 .icon-logo:hover {
     opacity: 1;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+    max-width: 50%;
 }
 
 .horizontal-line {
